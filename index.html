@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Столовая Колледжа — Меню с фильтрами</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="logo">
+            <span>🍽️ Столовая</span>
+        </div>
+
+        <nav class="menu">
+            <a href="#">Главная</a>
+            <a href="#">Меню</a>
+            <a href="#">Цены</a>
+            <a href="#">Контакты</a>
+        </nav>
+
+        <button class="btn">Войти</button>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="content">
+        <h2>Специальное меню столовой</h2>
+        
+        <!-- Панель хэштегов для сортировки -->
+        <div class="filter-tags">
+            <button class="tag active" data-filter="all">#ВсеБлюда</button>
+            <button class="tag" data-filter="main">#Основные</button>
+            <button class="tag" data-filter="soup">#СупыИБульоны</button>
+            <button class="tag" data-filter="fastfood">#ФастфудИСнеки</button>
+            <button class="tag" data-filter="drinks">#НапиткиИДесерты</button>
+            <button class="tag" data-filter="legend">#Легендарное</button>
+        </div>
+
+        <div class="dishes-container">
+            
+            <!-- Главное блюдо -->
+            <div class="dish-card main-dish" data-category="legend">
+                <img src="images/pizza-iz-makaron.jpg" alt="Убойный бешбармак">
+                <div class="card-info">
+                    <span class="badge">Хит дня</span>
+                    <h3>Убойный бешбармак</h3>
+                    <p>Секретный рецепт шеф-повара с неизвестными ингредиентами. Вызывает невероятный прилив сил.</p>
+                    <span class="price">∞∞∞∞∞ ₸</span>
+                </div>
+            </div>
+
+            <!-- Блюдо 2 -->
+            <div class="dish-card" data-category="fastfood">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300" alt="Насекомые">
+                <h3>Хрустящие крылья из Китая</h3>
+                <p>Экзотический белковый перекус для всех возрастов.</p>
+                <span class="price">∞∞∞∞ ₸</span>
+            </div>
+
+            <!-- Блюдо 3 -->
+            <div class="dish-card" data-category="main">
+                <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=300" alt="Салат">
+                <h3>Чикен салат</h3>
+                <p>Свежий улов прямо из глубин океана. Насыщает на неделю.</p>
+                <span class="price">∞∞∞ ₸</span>
+            </div>
+
+            <!-- Блюдо 4 -->
+            <div class="dish-card" data-category="fastfood">
+                <img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=300" alt="Чикирль">
+                <h3>Ведро чикильев</h3>
+                <p>Фирменные хрустящие чикилья в панировке.</p>
+                <span class="price">∞∞ ₸</span>
+            </div>
+
+            <!-- Блюдо 5 -->
+            <div class="dish-card" data-category="fastfood">
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=300" alt="Фастфуд">
+                <h3>Макдональдс и Ко</h3>
+                <p>Сборный сет мировой классики прямо на подносе столовой.</p>
+                <span class="price">∞ ₸</span>
+            </div>
+
+            <!-- Блюдо 6 -->
+            <div class="dish-card" data-category="soup">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=300" alt="Суп">
+                <h3>Суп «Секрет студента»</h3>
+                <p>Загадочный зеленый бульон неопределенного происхождения.</p>
+                <span class="price">∞∞∞∞∞∞∞∞∞∞∞∞ ₸</span>
+            </div>
+
+            <!-- Блюдо 7 -->
+            <div class="dish-card" data-category="main">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300" alt="Пицца">
+                <h3>Пицца «Вчерашняя»</h3>
+                <p>Вкусная, сытная и невероятно ностальгическая выпечка.</p>
+                <span class="price">∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞ ₸</span>
+            </div>
+
+            <!-- Блюдо 8 -->
+            <div class="dish-card" data-category="drinks">
+                <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=300" alt="Напиток">
+                <h3>Напиток «Бодрость на паре»</h3>
+                <p>Бодрит лучше любого кофе, состав держится в секрете.</p>
+                <span class="price">∞∞∞∞∞∞∞∞∞∞∞∞ ₸</span>
+            </div>
+
+            <!-- Блюдо 9 -->
+            <div class="dish-card" data-category="fastfood">
+                <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=300" alt="Панкейки">
+                <h3>Панкейки «Утренний сон»</h3>
+                <p>Пригорают с одной стороны для придания уникального вкуса с дымком.</p>
+                <span class="price">∞∞∞∞∞∞∞∞ ₸</span>
+            </div>
+
+            <!-- Блюдо 10 -->
+            <div class="dish-card" data-category="main">
+                <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=300" alt="Плов">
+                <h3>Плов из макарон</h3>
+                <p>Инновационное блюдо, объединившее две несовместимые стихии.</p>
+                <span class="price">∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞ ₸</span>
+            </div>
+
+            <!-- Блюдо 11 -->
+            <div class="dish-card" data-category="fastfood">
+                <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?w=300" alt="Хот-дог">
+                <h3>Хот-дог «Загадка»</h3>
+                <p>Сосиска из неизвестного мяса под мощным слоем горчицы.</p>
+                <span class="price">∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞₸</span>
+            </div>
+
+            <!-- Блюдо 12 -->
+            <div class="dish-card" data-category="soup">
+                <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=300" alt="Лапша">
+                <h3>Доширак «Элитный»</h3>
+                <p>Заварен крутым кипятком прямо в фирменной тарелке столовой.</p>
+                <span class="price">∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞ ₸</span>
+            </div>
+
+            <!-- Блюдо 13 -->
+            <div class="dish-card" data-category="main">
+                <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=300" alt="Роллы">
+                <h3>Роллы «Общежитие»</h3>
+                <p>Рис, вареная колбаса и майонез, завернутые в лаваш.</p>
+                <span class="price">∞∞∞∞∞∞∞∞∞∞∞∞₸</span>
+            </div>
+
+            <!-- Блюдо 14 -->
+            <div class="dish-card" data-category="drinks">
+                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=300" alt="Мороженое">
+                <h3>Мороженое «Зимняя сессия»</h3>
+                <p>Холодит душу так же сильно, как экзамен по математике.</p>
+                <span class="price">∞∞∞∞∞∞∞∞∞∞∞∞₸</span>
+            </div>
+
+            <!-- Блюдо 15 -->
+            <div class="dish-card" data-category="fastfood">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=300" alt="Бургер">
+                <h3>Мега-Бургер «Анти-сон»</h3>
+                <p>Котлета, способная удержать вас от сна на лекции.</p>
+                <span class="price">∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞₸</span>
+            </div>
+
+            <!-- Блюдо 16 -->
+            <div class="dish-card" data-category="main">
+                <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=300" alt="Стейк">
+                <h3>Стейк «Уголек»</h3>
+                <p>Прожарка уровня «Угля» — зубы проверятся на прочность.</p>
+                <span class="price">∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞ ₸</span>
+            </div>
+
+            <!-- Блюдо 17 -->
+            <div class="dish-card" data-category="fastfood">
+                <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=300" alt="Тосты">
+                <h3>Тосты «Утренний пепел»</h3>
+                <p>Хлеб, прошедший через глубокие испытания тостером.</p>
+                <span class="price">∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞₸</span>
+            </div>
+
+            <!-- Блюдо 18 -->
+            <div class="dish-card" data-category="main">
+                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=300" alt="Котлета">
+                <h3>Котлета «Шальная»</h3>
+                <p>Пытается сбежать с тарелки при виде голодного студента.</p>
+                <span class="price"> ∞∞∞∞∞∞∞∞∞∞∞∞₸</span>
+            </div>
+
+            <!-- Блюдо 19 -->
+            <div class="dish-card" data-category="soup">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=300" alt="Ассорти">
+                <h3>Сборная солянка «Конец месяца»</h3>
+                <p>Все остатки вчерашней роскоши в одной глубокой тарелке.</p>
+                <span class="price">∞∞∞∞∞∞∞∞∞∞∞∞ ₸</span>
+            </div>
+
+            <!-- Блюдо 20 -->
+            <div class="dish-card" data-category="main">
+                <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=300" alt="Салат овощной">
+                <h3>Салат «Витаминный удар»</h3>
+                <p>Капуста и морковь, натертые с особой студенческой ненавистью.</p>
+                <span class="price">∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞₸</span>
+            </div>
+
+            <!-- Блюдо 21 -->
+            <div class="dish-card" data-category="main">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300" alt="Боул">
+                <h3>Фито-боул «Надежда на стипендию»</h3>
+                <p>Полезно, дорого и оставляет легкое чувство голода.</p>
+                <span class="price">850 ₸</span>
+            </div>
+
+            <!-- Блюдо 22 -->
+            <div class="dish-card" data-category="drinks">
+                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=300" alt="Торт">
+                <h3>Торт «Пять хвостов»</h3>
+                <p>Сладкий десерт, который едят после успешной пересдачи.</p>
+                <span class="price">∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞₸</span>
+            </div>
+
+            <!-- Блюдо 23 -->
+            <div class="dish-card" data-category="fastfood">
+                <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=300" alt="Бутерброд">
+                <h3>Бутерброд «Параллельный мир»</h3>
+                <p>Масло намазано исключительно на обе стороны тарелки.</p>
+                <span class="price">∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞ ₸</span>
+            </div>
+
+            <!-- Блюдо 24 -->
+            <div class="dish-card" data-category="main">
+                <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=300" alt="Мясо">
+                <h3>Гуляш «Инкогнито»</h3>
+                <p>Под подливкой скрывается мясо неизвестного млекопитающего.</p>
+                <span class="price">∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞ ₸</span>
+            </div>
+
+            <!-- Блюдо 25 -->
+            <div class="dish-card" data-category="drinks">
+                <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=300" alt="Кофе">
+                <h3>Кофе «Черная дыра»</h3>
+                <p>Настолько крепкий, что растворяет ложку за 5 секунд.</p>
+                <span class="price">∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞ ₸</span>
+            </div>
+
+            <!-- Блюдо 26 -->
+            <div class="dish-card" data-category="drinks">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=300" alt="Булочка">
+                <h3>Булочка с повидлом «Сюрприз»</h3>
+                <p>Повидло есть, но найти его — настоящий квест для студента.</p>
+                <span class="price">∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞ ₸</span>
+            </div>
+
+            <!-- Блюдо 27 -->
+            <div class="dish-card" data-category="soup">
+                <img src="images/«Уральские_пельмени»_(логотип).jpg" alt="Пельмени">
+                <h3>Пельмени «Братская могила»</h3>
+                <p>Слиплись в один монолитный космический объект при варке.</p>
+                <span class="price">∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞ ₸</span>
+            </div>
+
+            <!-- Блюдо 28 -->
+            <div class="dish-card" data-category="drinks">
+                <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=300" alt="Десерт">
+                <h3>Десерт «Дедлайн»</h3>
+                <p>Употреблять за 5 минут до сдачи проекта, вызывает прилив дигродации.</p>
+                <span class="price">∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞ ₸</span>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Скрипт для фильтрации по хэштегам -->
+    <script>
+        const tags = document.querySelectorAll('.tag');
+        const cards = document.querySelectorAll('.dish-card');
+
+        tags.forEach(tag => {
+            tag.addEventListener('click', () => {
+                // Убираем активный класс у всех кнопок и ставим на текущую
+                tags.forEach(t => t.classList.remove('active'));
+                tag.classList.add('active');
+
+                const filter = tag.getAttribute('data-filter');
+
+                cards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
